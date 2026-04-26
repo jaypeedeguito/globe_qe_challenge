@@ -39,7 +39,7 @@ jobs:
           path: Reports
 
       - name: Deploy Extent Report to GitHub Page
-        uses: peaceiris/actions-gh-pages@v4
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: Reports/ExtentReport-HTML.html
+          branch: gh-pages
+          folder: Reports/
