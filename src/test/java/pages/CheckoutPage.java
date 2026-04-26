@@ -1,19 +1,13 @@
 package pages;
 
 import com.core.utility.BasePage;
-import com.core.utility.TestDataModel;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.assertions.LocatorAssertions;
 import com.microsoft.playwright.options.SelectOption;
 import com.microsoft.playwright.options.WaitForSelectorState;
 import io.cucumber.datatable.DataTable;
-import locators.AllProductsLocators;
 import locators.CheckoutLocators;
-import locators.CheckoutLocators;
-import locators.ShoppingCartLocators;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Map;
 
@@ -107,9 +101,9 @@ public class CheckoutPage extends BasePage {
         while (ctr <= 3) {
             ctr++;
             try {
-                getFrameLocator("//iframe[@*='Secure payment input frame']").locator(CheckoutLocators.CARD_RADIO_BUTTON_XPATH)
+                getFrameLocator(CheckoutLocators.IFRAME_XPATH).locator(CheckoutLocators.CARD_RADIO_BUTTON_XPATH)
                         .waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE).setTimeout(15000));
-                getFrameLocator("//iframe[@*='Secure payment input frame']").locator(CheckoutLocators.CARD_RADIO_BUTTON_XPATH).click();
+                getFrameLocator(CheckoutLocators.IFRAME_XPATH).locator(CheckoutLocators.CARD_RADIO_BUTTON_XPATH).click();
 //                setClickElement(CheckoutLocators.CARD_RADIO_BUTTON_XPATH);
                 break;
             } catch (Exception e) {

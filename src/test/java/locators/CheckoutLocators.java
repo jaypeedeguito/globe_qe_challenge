@@ -19,8 +19,4 @@ public class CheckoutLocators {
     public static final String SECURITY_CODE_TEXTBOX_XPATH = "//input[@id='payment-cvcInput']";
     public static final String COUNTRY_PAYMENT_DROPDOWN_XPATH = "//select[@id='payment-countryInput']";
     public static final String IFRAME_XPATH = "//iframe[@*='Secure payment input frame']";
-
-
-
-
 }
