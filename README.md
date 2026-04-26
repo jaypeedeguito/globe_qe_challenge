@@ -36,7 +36,7 @@ cd globe_qe_challenge
 mvn clean install
 ```
 
-### Running Tests Locally
+## Running Tests Locally
 
 ```
 # To run in normal mode
@@ -46,26 +46,26 @@ mvn clean test -PLocal
 mvn clean test -PCI
 ```
 
-### Running Tests in GitHub Actions
+## Running Tests in GitHub Actions
 [![Run Smoke Test](https://github.com/jaypeedeguito/globe_qe_challenge/actions/workflows/SmokeTest.yml/badge.svg)](https://github.com/jaypeedeguito/globe_qe_challenge/actions/workflows/SmokeTest.yml)
 
-##Workflow Features
+### Workflow Features
 - Runs on manual trigger
 - Automatic Extent Report Generation
 - Uploads artifacts (Reports)
 
-## Workflow File Location
+### Workflow File Location
 ```
 .github/workflows/SmokeTest.yml
 ```
 
-## How to Trigger the Workflow
+### How to Trigger the Workflow
 - Manually trigger from the Actions tab in GitHub
 - actions > workflows > SmokeTest.yml > Run Workflow
 
 ![img_2.png](img/img_2.png)
 
-### Test Reports
+## Test Reports
 After execution, reports are generated in:
 ```
 globe_qe_challenge/
@@ -79,7 +79,7 @@ globe_qe_challenge/
 ### Extent Reports
 ![img_3.png](img/img_3.png)
 
-### 📁 Project Structure
+## 📁 Project Structure
 This Framework uses the automation pattern [Page Object Model] and is structured as follows.
 ```
 globe_qe_challenge/src
