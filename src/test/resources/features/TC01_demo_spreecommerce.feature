@@ -1,9 +1,5 @@
 Feature: Test Spree Ecommerce Sign up, Login and Adding to cart, Checkout
 
-  @Smoke_Test
-  Scenario: User validate E2E Sign up, Login and Adding to cart, Checkout
-    Given the user is on the Spree Store home page
-
   @Smoke
   Scenario: User validate E2E Sign up, Login and Adding to cart, Checkout
     Given the user is on the Spree Store home page
