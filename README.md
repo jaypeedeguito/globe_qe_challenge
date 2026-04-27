@@ -62,7 +62,7 @@ mvn clean test -PCI
 ### How to Trigger the Workflow
 - Manually trigger from the Actions tab in GitHub
 - Actions > workflows > SmokeTest.yml > Run Workflow
-- Download the Reports
+- Download the Reports folder (contains ExtentReport) or access the Github hosted Spark Report https://jaypeedeguito.github.io/globe_qe_challenge/
 
 ![img_2.png](img/img_2.png)
 
