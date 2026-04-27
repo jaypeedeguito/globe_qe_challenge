@@ -36,7 +36,7 @@ cd globe_qe_challenge
 mvn clean install
 ```
 
-## Running Tests Locally
+## 🎯Running Tests Locally
 
 ```
 # To run in normal mode
@@ -46,7 +46,7 @@ mvn clean test -PLocal
 mvn clean test -PCI
 ```
 
-## Running Tests in GitHub Actions
+## ⚡Running Tests in GitHub Actions
 [![Run Smoke Test](https://github.com/jaypeedeguito/globe_qe_challenge/actions/workflows/SmokeTest.yml/badge.svg)](https://github.com/jaypeedeguito/globe_qe_challenge/actions/workflows/SmokeTest.yml)
 
 ### Workflow Features
@@ -61,9 +61,11 @@ mvn clean test -PCI
 
 ### How to Trigger the Workflow
 - Manually trigger from the Actions tab in GitHub
-- actions > workflows > SmokeTest.yml > Run Workflow
-
+- Actions > workflows > SmokeTest.yml > Run Workflow
 ![img_2.png](img/img_2.png)
+
+- Download the Reports
+![img.png](img/img.png)
 
 ## Test Reports
 After execution, reports are generated in:
@@ -105,8 +107,8 @@ globe_qe_challenge/src
 │       └── extent-config.xml
 │
 │
-├── Reports/                # Test reports
-├── .github/workflows/      # CI/CD pipelines
+├── Reports/                        # Test reports
+├── .github/workflows/              # CI/CD pipelines
 ├── pom.xml
 └── README.md
 ```
