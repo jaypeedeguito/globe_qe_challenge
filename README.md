@@ -62,9 +62,9 @@ mvn clean test -PCI
 ### How to Trigger the Workflow
 - Manually trigger from the Actions tab in GitHub
 - Actions > workflows > SmokeTest.yml > Run Workflow
-![img_2.png](img/img_2.png)
-
 - Download the Reports
+
+![img_2.png](img/img_2.png)
 
 ![img.png](img/img.png)
 
